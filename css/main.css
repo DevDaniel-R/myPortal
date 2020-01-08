@@ -20,3 +20,8 @@
 .banner-name {
   color: #E31B6D;
 }
+
+.two-spaces {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}

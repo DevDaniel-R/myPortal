@@ -1,0 +1,22 @@
+.main-header {
+  /* background: rgba(0, 0, 0, .5);
+  url(../img/backgroundB.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.5)100%), url("../img/backgroundB.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.main-header .showcase {
+  padding-top: 150px;
+}
+
+.active-link {
+  border-bottom: 2px solid #E31B6D;
+  font-weight: bold;
+}
+
+.banner-name {
+  color: #E31B6D;
+}

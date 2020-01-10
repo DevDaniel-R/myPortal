@@ -26,12 +26,17 @@
   padding-bottom: 100px;
 }
 
+.three-spaces {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
-.about {
+.headline {
   color: #E31B6D;
 }
 

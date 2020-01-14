@@ -17,12 +17,16 @@ body {
 }
 
 .active-link {
-  border-bottom: 2px solid #E31B6D;
+  border-bottom: 2px solid #04c2c9;
   font-weight: bold;
 }
 
 .banner-name {
   color: #E31B6D;
+}
+
+.color-text {
+  color: #04c2c9;
 }
 
 .two-spaces {
@@ -49,7 +53,7 @@ body {
 #body-workflow {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,12 +152,6 @@ body {
   transform: translateY(-40px);
   opacity: 0;
   visibility: hidden;
-}
-
-.box:hover .content-box a {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
 }
 
 /* 
@@ -259,7 +257,7 @@ body {
   background-image: url(../img/a.jpg);
   background-size: cover;
   min-width: 100%;
-  min-height: 95vh;
+  min-height: 90vh;
 }
 
 .section-about {
@@ -323,6 +321,14 @@ body {
   margin: 4rem 0;
 }
 
+.p-top {
+  padding-top: 5rem;
+}
+
+.p-bottom {
+  padding-bottom: 5rem;
+}
+
 /* Google Maps*/
 .section-contact {
   position: relative;
@@ -340,4 +346,10 @@ body {
 .section-contact .card-panel {
   position: relative;
   z-index: 1;
+}
+
+/*footer*/
+
+.fa-4x {
+  margin: 1rem 3rem;
 }

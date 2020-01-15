@@ -329,6 +329,10 @@ body {
   padding-bottom: 5rem;
 }
 
+.top {
+  z-index: 100;
+}
+
 /* Google Maps*/
 .section-contact {
   position: relative;

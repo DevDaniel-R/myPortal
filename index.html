@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 
 <head>
   <!--Import Google Icon Font-->
@@ -67,9 +67,9 @@
     <!-- Showcase -->
     <div class="showcase container">
       <div class="row">
-        <div class="col s12 m10 offset-m1 center">
-          <h1>Hello, I am <span class="banner-name main-text">Daniel Rodriguez</span></h1>
-          <p class="flow-text main-text"> I like to create digital experiences.</p>
+        <div class="col s12 m10 offset-m1 center main-text">
+          <h1>Hello, I am <span class="banner-name">Daniel Rodriguez</span></h1>
+          <p class="flow-text"> I like to create digital experiences.</p>
           <br>
           <br>
           <a class="waves-effect waves-light btn-large" href="#projects">My Work</a>
@@ -85,7 +85,7 @@
     <div class="center">
       <h2 id="about" class="color-text center-align p-top scrollspy">Powerful & Innovative</h2>
       <p>
-        <p class="white-text lead center-align">focusing on the way we all see web sites.</p>
+        <p class="white-text lead center-align">Focusing on the way we all see web sites.</p>
     </div>
   </div>
   <div id="body-workflow">
@@ -94,9 +94,9 @@
         <div class="content-box">
           <h2><i class="fas fa-laptop"></i></h2>
           <h3>Front-End</h3>
-          <p class="work-flow-text">Using the latest versions of front-end technologies I develope modern and responsive
-            web
-            sites &
+          <p class="work-flow-text">Using the latest versions of front-end technologies to develope modern and
+            responsive
+            web pages & applications.
             <!-- applications.Developing websites from designs and concepts is my passion. I strive to create one of kind
             websites and web applications.</p> -->
         </div>
@@ -105,7 +105,8 @@
         <div class="content-box">
           <h2><i class="fas fa-eye"></i></h2>
           <h3>Design</h3>
-          <p>I have an eye for design. I started with Photoshop, Illustrator, and XD to allow me to create beautiful and
+          <p>I have an eye for design. I started with Photoshop, Illustrator, and XD to create dynamic & engaging web
+            graphcis.
             <!-- engaging web graphics, mock-ups and more. Design is what I do and love. I use the latest tools in design to
             come up with modern and awesome designs.</p> -->
         </div>
@@ -114,17 +115,16 @@
         <div class="content-box">
           <h2><i class="far fa-lightbulb"></i></h2>
           <h3>Adaptive</h3>
-          <p>Developing unique functional websites & applications from designs and concepts is my passion. which is why
-            I am seeking challenges to improving my skills.</p>
+          <p>Creating unique functional sites & applications from bare ideas is my passion. Which is why
+            I consistantly work on improving my skills.</p>
         </div>
       </div>
       <div class="box">
         <div class="content-box">
           <h2><i class="fas fa-database"></i></h2>
           <h3>Back-End</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a
-            galley of type and
-            scrambled it to make a type specimen book. </p>
+          <p>Developing the logical core that is indirectly accessed through front-end components & features that
+            manages data. </p>
         </div>
       </div>
     </div>
@@ -138,7 +138,7 @@
           <h1 class="left-align three-spaces"><span class="headline">About</span> me.
           </h1>
           <p class="flow-text about-p">With how technology depend our world is today it is vital for all individuals and
-            businesses to have a web presence. However, the sudden expansions in tech has created a big problem. there
+            businesses to have a web presence. However, the sudden expansions in tech has created a big problem. There
             are too many ways to build the same site/app, and how you choose your bundle of technologies will determind
             your success</p>
           <p class="flow-text about-p">As a developer I aim to bridge the gap between design,configuration, and
@@ -170,9 +170,11 @@
             <p><a class="blue-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">technologies -<i
+            <span class="card-title grey-text text-darken-4">Technologies -<i
                 class="material-icons right">close</i></span>
-            <p></p>
+            <p class="pink-text">HTML, CSS ANIMATION, JAVASCRIPT, AND PHP </p>
+            <br>
+            <span class="card-title grey-text text-darken-4">Info -</span>
             <p class="black-text">Here is some more information about this product that is only revealed once clicked
               on.</p>
           </div>
@@ -182,7 +184,7 @@
       <div class="col s12 m6">
         <div class="card sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/code.jpg">
+            <img class="activator" src="img/hoolie.png">
           </div>
           <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">Hoolie Search Engine<i
@@ -217,7 +219,7 @@
       <div class="col s12 m6">
         <div class="card sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/code.jpg">
+            <img class="activator" src="img/movie.png">
           </div>
           <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">Movie Application<i
@@ -252,8 +254,8 @@
               <label for="email">Email</label>
             </div>
             <div class="input-field">
-              <input type="text" id="name" placeholder="Name">
-              <label for="name">Phone</label>
+              <input type="text" id="phone" placeholder="Phone">
+              <label for="phone">Phone</label>
             </div>
             <div class="input-field">
               <textarea class="materialize-textarea" id="message" placeholder="Your message"></textarea>
@@ -316,20 +318,21 @@
       $('.scrollspy').scrollSpy();
       //init Scrollfire
       const options = [{
-        selector: '.main-text',
-        offset: 0,
-        callback: function (el) {
-          Materialize.fadeInImage($(el));
+          selector: '.main-text',
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
         },
-
-        selector: '.navbar-fixed',
-        offset: 1400,
-        callback: function (el) {
-          $('nav').removeClass('transparent');
-          $('nav').addClass('black border-bot');
+        {
+          selector: '.navbar-fixed',
+          offset: 1400,
+          callback: function (el) {
+            $('nav').removeClass('transparent');
+            $('nav').addClass('black border-bot');
+          }
         }
-
-      }];
+      ];
 
       Materialize.scrollFire(options);
 

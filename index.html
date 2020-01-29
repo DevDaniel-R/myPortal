@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,44 +13,29 @@
   <title>Portfolio</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
   <!-- Header -->
-  <header class="main-header">
+  <header class="main-header navbar-fixed">
     <nav class="transparent">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">DEV_</a>
-          <a href="#" data-activates="mobile-nav" class="button-collapse">
+          <a class="brand-logo">DEV_</a>
+          <a href="#home" data-activates="mobile-nav" class="button-collapse">
             <i class="fa fa-bars"></i>
           </a>
           <ul class="right hide-on-med-and-down">
             <li>
-              <a class="active-link" href="index.html">Home</a>
+              <a class="active-link" href="#home">Home</a>
             </li>
             <li>
-              <a href="#">About Me</a>
+              <a href="#about">About Me</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#" class="btn red darken-1">Contact</a>
+              <a href="#contact" class="btn red darken-1">Contact</a>
             </li>
-            <!-- <li>
-              <a href="https://facebook.com">
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com">
-                <i class="fab fa-github-square fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com">
-                <i class="fas fa-envelope-square fa-2x"></i>
-              </a>
-            </li> -->
           </ul>
           <ul class="side-nav" id="mobile-nav">
             <h4 class="center">DEV_</h4>
@@ -63,18 +47,18 @@
                 <i class="fa fa-home grey-text text-darken-4"></i> Home</a>
             </li>
             <li>
-              <a href="#">
+              <a href="#about">
                 <i class="fas fa-user grey-text text-darken-4"></i> About</a>
             </li>
             <li>
-              <a href="#">
+              <a href="#projects">
                 <i class="fas fa-code grey-text text-darken-4"></i> Projects</a>
             </li>
             <li>
               <div class="divider"></div>
             </li>
             <li>
-              <a href="#" class="btn red darken-1">Connect</a>
+              <a href="#contact" class="btn red darken-1">Connect</a>
             </li>
           </ul>
         </div>
@@ -84,11 +68,11 @@
     <div class="showcase container">
       <div class="row">
         <div class="col s12 m10 offset-m1 center">
-          <h1>Hello, I am <span class="banner-name">Daniel Rodriguez</span></h1>
-          <p class="flow-text"> I like to create digital experiences.</p>
+          <h1>Hello, I am <span class="banner-name main-text">Daniel Rodriguez</span></h1>
+          <p class="flow-text main-text"> I like to create digital experiences.</p>
           <br>
           <br>
-          <a class="waves-effect waves-light btn-large" href="#">My Work</a>
+          <a class="waves-effect waves-light btn-large" href="#projects">My Work</a>
           <!-- <a href="#" class="btn btn-large grey lighten-5 black-text">My Work</a> -->
         </div>
       </div>
@@ -98,8 +82,8 @@
   <!-- Section: WorkFlow-->
   <div class="container">
     <h1 class="left-align white-text"><span class="headline">My</span> Workflow.</h1>
-    <div center>
-      <h2 class="color-text center-align p-top">Powerful & Innovative</h2>
+    <div class="center">
+      <h2 id="about" class="color-text center-align p-top scrollspy">Powerful & Innovative</h2>
       <p>
         <p class="white-text lead center-align">focusing on the way we all see web sites.</p>
     </div>
@@ -138,76 +122,32 @@
         <div class="content-box">
           <h2><i class="fas fa-database"></i></h2>
           <h3>Back-End</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a
+            galley of type and
             scrambled it to make a type specimen book. </p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- <section class="section section-icons center grey lighten-4">
-    <div class="container two-spaces">
-      <h2 class="left-align three-spaces"><span class="headline">My</span> Workflow.</h2>
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card-panel card small transparent">
-            <i class="fas fa-laptop fa-3x"></i>
-            <h5 class="blue-text darken-4">Front-End</h5>
-            <p class="flow-text">Creating digital identies that give users a unique experience.</p>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel card small transparent">
-            <i class="fas fa-eye fa-3x"></i>
-            <h5 class="blue-text darken-4">UI/UX</h5>
-            <p class="flow-text">Developing real ideas with specific technologies to give your online
-              purpose.</p>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel card small transparent">
-            <i class="fas fa-database fa-3x"></i>
-            <h5 class="blue-text darken-4">Back-End</h5>
-            <p class="flow-text">Lorem ipsum, dolor sit ame.</p>
-          </div>
-        </div>
-      </div>
-      <div class="container gauge-section">
-        <div class="row">
-
-          <ul class="gauge-ul">
-            <li class="circle-gauge"><a href="#" style="--gauge-value:95"></a><span>Html/Css</span></li>
-            <li class="circle-gauge"><a href="#" style="--gauge-value:88"></a><span>Javascript</span></li>
-            <li class="circle-gauge"><a href="#" style="--gauge-value:80"></a><span>React</span></li>
-            <li class="circle-gauge"><a href="#" style="--gauge-value:75"></a><span>php</span></li>
-            <li class="circle-gauge"><a href="#" style="--gauge-value:80"></a><span>Sql</span></li>
-            <li class="circle-gauge"><a href="#" style="--gauge-value:85"></a><span>Npm</span></li>
-            <li class="circle-gauge"><a href="#" style="--gauge-value:75"></a><span>Photoshop</span></li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <!--About Us-->
-  <section class=" white-text section section-about">
+  <section class="white-text section section-about">
     <div class="container">
       <div class="row three-spaces">
         <div class="col s12 m4">
           <h1 class="left-align three-spaces"><span class="headline">About</span> me.
           </h1>
-          <p class="flow-text about-p">There are countless of ways to build websites & web apps now, however, some
-            technological stacks work better in certain situations.</p>
-          <p class="flow-text about-p">As a developer I aim to bridge the gap between design & development to build
-            unique functional user experiences that leads to metting business goals.
+          <p class="flow-text about-p">With how technology depend our world is today it is vital for all individuals and
+            businesses to have a web presence. However, the sudden expansions in tech has created a big problem. there
+            are too many ways to build the same site/app, and how you choose your bundle of technologies will determind
+            your success</p>
+          <p class="flow-text about-p">As a developer I aim to bridge the gap between design,configuration, and
+            development to build unique functional user appealing applications that leads to metting business goals.
           </p>
         </div>
         <div class="col s12 m8">
           <div class="about-img two-spaces z-depth-5">
           </div>
-          <!-- <img src="img/meeting.jpg" alt="" class="responsive-img height=80vh"> -->
         </div>
       </div>
     </div>
@@ -220,18 +160,21 @@
       <h1 class="left-align three-spaces"><span class="headline">Recent</span> work.</h1>
 
       <div class="col s12 m6">
-        <div class="card sticky-action">
+        <div id="projects" class="card sticky-action scrollspy">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/code.jpg">
+            <img class="activator" src="img/festi.png">
           </div>
           <div class="card-content card-action">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i
+            <span class="card-title activator grey-text text-darken-4">Event NewsLetter<i
                 class="material-icons right">more_vert</i></span>
             <p><a class="blue-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title grey-text text-darken-4">technologies -<i
+                class="material-icons right">close</i></span>
+            <p></p>
+            <p class="black-text">Here is some more information about this product that is only revealed once clicked
+              on.</p>
           </div>
         </div>
       </div>
@@ -242,7 +185,7 @@
             <img class="activator" src="img/code.jpg">
           </div>
           <div class="card-content card-action">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i
+            <span class="card-title activator grey-text text-darken-4">Hoolie Search Engine<i
                 class="material-icons right">more_vert</i></span>
             <p><a class="blue-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
@@ -260,7 +203,7 @@
             <img class="activator" src="img/code.jpg">
           </div>
           <div class="card-content card-box-color card-action">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i
+            <span class="card-title activator grey-text text-darken-4">Coming Soon<i
                 class="material-icons right">more_vert</i></span>
             <p><a class="blue-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
@@ -277,7 +220,7 @@
             <img class="activator" src="img/code.jpg">
           </div>
           <div class="card-content card-action">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i
+            <span class="card-title activator grey-text text-darken-4">Movie Application<i
                 class="material-icons right">more_vert</i></span>
             <p><a class="blue-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
@@ -291,14 +234,14 @@
   </section>
 
   <!--Let's Connect-->
-  <section id="contact" class="section section-contact center scrollspy">
+  <section class="section section-contact center">
     <h2 class="left-align three-spaces container white-text top"><span class="headline">Let's</span> connect.</h2>
     <div id="googlemap"></div>
     <div class="container three-spaces">
       <div class="row">
         <div class="col s12 m6 offset-m6">
           <div class="card-panel z-depth-5 blue-grey darken-4">
-            <h3 class="white-text">CONTACT</h3>
+            <h3 id="contact" class="white-text scrollspy">CONTACT</h3>
             <p class="lead text color-text">Have a question or want to work together?</p>
             <div class="input-field">
               <input type="text" id="name" placeholder="Name">
@@ -326,6 +269,11 @@
   <!-- Footer -->
   <footer class="page-footer black">
     <div class="container white-text center">
+      <div class="row center">
+        <div class="col s12">
+          <a href="#home"><i class="fas fa-angle-double-up fa-3x"></i></a>
+        </div>
+      </div>
       <div class="row">
         <div class="col s12">
           <a href="https://facebook.com" target="_blank" class="white-text">
@@ -340,35 +288,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="container center-align"> -->
-    <!-- <div class="row center-align">
-        <div class="col l2 offset-l3">
-          <a class="btn-floating btn-large waves-effect waves-light red"><i class="fab fa-facebook fa-2x "></i></a>
-        </div>
-        <div class="col l2">
-          <a class="btn-floating btn-large waves-effect waves-light blue"><i class="fab fa-twitter fa-2x "></i></a>
-        </div>
-        <div class="col l2">
-          <a class="btn-floating btn-large waves-effect waves-light red"><i class="fab fa-instagram fa-2x "></i></a>
-        </div>
-      </div> -->
-    <!-- <ul class="transparent col s12">
-          <li>
-            <a href="https://facebook.com">
-              <i class="fab fa-facebook fa-2x"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com">
-              <i class="fab fa-twitter fa-2x"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com">
-              <i class="fab fa-instagram fa-2x"></i>
-            </a>
-          </li>
-        </ul> -->
     <div class="footer-copyright">
       <div class="container center-align">
         <span class="headline">DANIEL RODRIGUEZ</span> © 2019
@@ -391,8 +310,31 @@
   <script src="http://maps.googleapis.com/maps/api/js"></script>
   <script>
     $(document).ready(function () {
-      // Custom JS & jQuery here
+      // init SideNav
+      $('.button-collapse').sideNav();
+      //init Scrollspy
+      $('.scrollspy').scrollSpy();
+      //init Scrollfire
+      const options = [{
+        selector: '.main-text',
+        offset: 0,
+        callback: function (el) {
+          Materialize.fadeInImage($(el));
+        },
 
+        selector: '.navbar-fixed',
+        offset: 1400,
+        callback: function (el) {
+          $('nav').removeClass('transparent');
+          $('nav').addClass('black border-bot');
+        }
+
+      }];
+
+      Materialize.scrollFire(options);
+
+
+      //googlemaps
       const position = [33.004, -97.2258];
       const centerPosition = [33.014, -97.15];
 

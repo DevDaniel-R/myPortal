@@ -7,7 +7,7 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/main.css" />
-  <link type="text/css" rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <link type="text/css" rel="stylesheet" media="screen and (max-width: 1024px)" href="css/mobile.css">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
@@ -15,63 +15,65 @@
 
 <body id="home" class="scrollspy">
   <!-- Header -->
-  <header class="main-header navbar-fixed">
-    <nav class="transparent">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a class="lead white-text">drodrigeuz993@outlook.com</a>
-          <a href="#home" data-activates="mobile-nav" class="button-collapse">
-            <i class="fa fa-bars"></i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a class="active-link" href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About Me</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact" class="btn red darken-1">Contact</a>
-            </li>
-          </ul>
-          <ul class="side-nav" id="mobile-nav">
-            <h4 class="center">DEV_</h4>
-            <li>
-              <div class="divider"></div>
-            </li>
-            <li>
-              <a href="index.html">
-                <i class="fa fa-home grey-text text-darken-4"></i> Home</a>
-            </li>
-            <li>
-              <a href="#about">
-                <i class="fas fa-user grey-text text-darken-4"></i> About</a>
-            </li>
-            <li>
-              <a href="#projects">
-                <i class="fas fa-code grey-text text-darken-4"></i> Projects</a>
-            </li>
-            <li>
-              <a href="#contact">
-                <i class="fas fa-id-badge"></i> Contact</a>
-            </li>
-          </ul>
+  <header class="main-header">
+    <div class="navbar-fixed">
+      <nav class="transparent">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a class="lead white-text">drodrigeuz993@outlook.com</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse">
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About Me</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact" class="btn red darken-1">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+    <!-- SideNav -->
+    <ul class="side-nav" id="mobile-nav">
+      <h4 class="center">DEV_</h4>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class="fa fa-home grey-text text-darken-4"></i> Home</a>
+      </li>
+      <li>
+        <a href="#about">
+          <i class="fas fa-user grey-text text-darken-4"></i> About</a>
+      </li>
+      <li>
+        <a href="#projects">
+          <i class="fas fa-code grey-text text-darken-4"></i> Projects</a>
+      </li>
+      <li>
+        <a href="#contact">
+          <i class="fas fa-id-badge"></i> Contact</a>
+      </li>
+    </ul>
     <!-- Showcase -->
     <div class="showcase container">
       <div class="row">
-        <div class="col s12 m10 offset-m1 center main-text">
+        <div class="col s12 m10 offset-m1 center main-text mobile-header">
           <h1>Hello, I am <span class="banner-name">Daniel Rodriguez</span></h1>
           <p class="flow-text"> I like to create digital experiences.</p>
           <br>
           <br>
           <a class="waves-effect waves-light btn-large" href="#projects">My Work</a>
-          <!-- <a href="#" class="btn btn-large grey lighten-5 black-text">My Work</a> -->
         </div>
       </div>
     </div>
@@ -83,7 +85,7 @@
     <div class="center">
       <h2 id="about" class="color-text center-align p-top scrollspy">Powerful & Innovative</h2>
       <p>
-        <p class="white-text lead center-align">Focusing on the way we all see web sites.</p>
+        <p class="white-text lead center-align mobile-space">Focusing on the way we all see web sites.</p>
     </div>
   </div>
   <div id="body-workflow">
@@ -157,10 +159,10 @@
     <div class="row container">
       <h1 class="left-align three-spaces"><span class="headline">Recent</span> work.</h1>
 
-      <div class="col s12 m6">
+      <div class="col s12 m6 l6">
         <div id="projects" class="card sticky-action scrollspy">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/festi.png">
+            <img class="activator responsive-img" src="img/festi-compressor.png">
           </div>
           <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">Event NewsLetter<i
@@ -179,10 +181,10 @@
         </div>
       </div>
 
-      <div class="col s12 m6">
+      <div class="col s12 m6 l6">
         <div class="card sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/hoolie.png">
+            <img class="activator responsive-img" src="img/hoolie-compressor.png">
           </div>
           <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">Hoolie Search Engine<i
@@ -202,10 +204,10 @@
       </div>
     </div>
     <div class="row container">
-      <div class="col s12 m6">
+      <div class="col s12 m6 l6">
         <div class="card sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/code.jpg">
+            <img class="activator responsive-img" src="img/code-compressor.jpg">
           </div>
           <div class="card-content card-box-color card-action">
             <span class="card-title activator grey-text text-darken-4">Coming Soon<i
@@ -224,10 +226,10 @@
         </div>
       </div>
 
-      <div class="col s12 m6">
+      <div class="col s12 m6 l6">
         <div class="card sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/movie.png">
+            <img class="activator responsive-img" src="img/movie-compressor.png">
           </div>
           <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">Movie Application<i
@@ -249,7 +251,7 @@
 
   <!--Let's Connect-->
   <section class="section section-contact center">
-    <h2 class="left-align three-spaces container white-text top"><span class="headline">Let's</span> connect.</h2>
+    <h2 class="left-align three-spaces white-text top"><span class="headline">Let's</span> connect.</h2>
     <div id="googlemap"></div>
     <div class="container three-spaces">
       <div class="row">
@@ -308,15 +310,6 @@
       </div>
       <!-- </div> -->
   </footer>
-
-  <!--
-              <section id="work-a" class="text-center py-4">
-            <div class="container">
-              <h2 class="section-title">My Work</h2>
-              <div class="bottom-line"></div>
-              <p class="lead">
-                Check out some of my projects
-              </p> -->
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

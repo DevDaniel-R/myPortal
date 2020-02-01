@@ -14,11 +14,6 @@ body {
   padding-top: 150px;
 }
 
-/* .active-link {
-  border-bottom: 2px solid #04c2c9;
-  font-weight: bold;
-} */
-
 .banner-name {
   color: #E31B6D;
 }
@@ -157,13 +152,18 @@ body {
 }
 
 /*start of about*/
-.about-img {
-  background-position: center;
+.container-img {
   position: relative;
-  background-image: url(../img/a.jpg);
+  height: 80vh;
+  overflow: hidden;
+}
+
+.about-img {
+  background-image: url(../img/my2.jpg);
+  width: 100%;
   background-size: cover;
-  min-width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
+  padding-bottom: 10vh;
 }
 
 .section-about {

@@ -117,7 +117,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 5em;
-  color: rgba(255, 255, 25, 0.5);
+  /* color: rgba(255, 255, 25, 0.5); */
+  color: rgb(136, 146, 176);
   transition: 0.5s;
 }
 
@@ -263,4 +264,8 @@ body {
 
 .fa-4x {
   margin: 1rem 3rem;
+}
+
+.fa-angle-double-up {
+  color: #E31B6D;
 }

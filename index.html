@@ -20,7 +20,7 @@
       <nav class="transparent">
         <div class="container">
           <div class="nav-wrapper">
-            <a class="lead white-text">drodrigeuz993@outlook.com</a>
+            <a href="mailto:drodriguez993@outlook.com" class="lead white-text">drodrigeuz993@outlook.com</a>
             <a href="#" data-activates="mobile-nav" class="button-collapse">
               <i class="fa fa-bars"></i>
             </a>
@@ -141,7 +141,7 @@
         <div class="col m5 l5 offset-l1 container-img">
           <!-- <div class="about-img">
           </div> -->
-          <img class=" circle responsive-img" src="/img/I7-compressor.jpg">
+          <img class="responsive-img" src="/img/I7-compressor.jpg">
         </div>
       </div>
     </div>
@@ -161,7 +161,7 @@
           <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">Event NewsLetter<i
                 class="material-icons right">more_vert</i></span>
-            <p><a class="blue-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
+            <p><a class="blue-grey-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Technologies -<i
@@ -183,7 +183,7 @@
           <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">Hoolie Search Engine<i
                 class="material-icons right">more_vert</i></span>
-            <p><a class="blue-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
+            <p><a class="blue-grey-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Technologies -<i
@@ -206,7 +206,7 @@
           <div class="card-content card-box-color card-action">
             <span class="card-title activator grey-text text-darken-4">Coming Soon<i
                 class="material-icons right">more_vert</i></span>
-            <p><a class="blue-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
+            <p><a class="blue-grey-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Technologies -<i
@@ -228,7 +228,7 @@
           <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">Movie Application<i
                 class="material-icons right">more_vert</i></span>
-            <p><a class="blue-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
+            <p><a class="blue-grey-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Technologies -<i
@@ -250,25 +250,29 @@
     <div class="container three-spaces">
       <div class="row">
         <div class="col s12 m6 offset-m6">
-          <form method="POST" data-netlify="true">
+          <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div class="card-panel z-depth-5 blue-grey darken-4">
               <h3 id="contact" class="white-text scrollspy">CONTACT</h3>
               <p class="lead text color-text">Have a question or want to work together?</p>
               <div class="input-field white-text">
-                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="name" placeholder="Name" name="name" />
                 <label for="name">Name</label>
               </div>
               <div class="input-field white-text">
-                <input type="email" id="email" placeholder="Email">
+                <input type="email" id="email" placeholder="Email" name="email" />
                 <label for="email">Email</label>
               </div>
               <div class="input-field white-text">
-                <input type="text" id="phone" placeholder="Phone">
+                <input type="text" id="phone" placeholder="Phone" name="phone" />
                 <label for="phone">Phone</label>
               </div>
               <div class="input-field white-text">
-                <textarea class="materialize-textarea" id="message" placeholder="Your message"></textarea>
+                <textarea class="materialize-textarea" id="message" placeholder="Your message"
+                  name="message"></textarea>
                 <label for="message">Message</label>
+              </div>
+              <div class="my-2">
+                <div data-netlify-recaptcha="true"></div>
               </div>
               <input type="submit" value="Submit" class="btn blue-grey pulse">
             </div>

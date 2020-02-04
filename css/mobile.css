@@ -62,19 +62,19 @@
   }
 
   .container-work .box:nth-child(1):before {
-    background: linear-gradient(315deg, #1e88e5, #8e24aa);
+    background: linear-gradient(315deg, #E31B6D, #0a192f);
   }
 
   .container-work .box:nth-child(2):before {
-    background: linear-gradient(315deg, #1e88e5, #8e24aa);
+    background: linear-gradient(315deg, #E31B6D, #0a192f);
   }
 
   .container-work .box:nth-child(3):before {
-    background: linear-gradient(315deg, #1e88e5, #8e24aa);
+    background: linear-gradient(315deg, #E31B6D, #0a192f);
   }
 
   .container-work .box:nth-child(4):before {
-    background: linear-gradient(315deg, #1e88e5, #8e24aa);
+    background: linear-gradient(315deg, #E31B6D, #0a192f);
   }
 
   .content-box {
@@ -89,7 +89,7 @@
     margin: 0;
     padding: 0;
     font-size: 5em;
-    color: rgba(255, 255, 25, 0.5);
+    color: rgba(136, 146, 176);
     transition: 0.5s;
   }
 

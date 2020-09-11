@@ -154,12 +154,13 @@ body {
 }
 
 /*start of about*/
-/* .container-img {
+.container-img {
   margin-top: 1rem;
   overflow: hidden;
-} */
+}
 
-/* .about-img {
+/* turns background black 
+.about-img {
   background-image: url(../img/I5-compressor.jpg);
   width: 100%;
   background-size: cover;

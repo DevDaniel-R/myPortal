@@ -144,7 +144,7 @@
         <div class="col m5 l5 offset-l1 container-img">
           <!-- <div class="about-img">
           </div> -->
-          <img class="responsive-img" src="/img/I7-compressor.jpg">
+          <img class="responsive-img" src="/img/A7-compressor.jpg">
         </div>
       </div>
     </div>
@@ -209,7 +209,8 @@
           <div class="card-content card-box-color card-action">
             <span class="card-title activator grey-text text-darken-4">BrickHousePizza<i
                 class="material-icons right">more_vert</i></span>
-            <p><a class="blue-grey-text" href="https://cranky-banach-ac7e68.netlify.com/">View Project</a> <a class="pink-text" href="#">View Code</a></p>
+            <p><a class="blue-grey-text" href="https://cranky-banach-ac7e68.netlify.com/">View Project</a> <a
+                class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Technologies -<i
@@ -230,7 +231,8 @@
           <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">Movie Application<i
                 class="material-icons right">more_vert</i></span>
-            <p><a class="blue-grey-text" href="https://thirsty-swanson-24a632.netlify.com/">View Project</a> <a class="pink-text" href="#">View Code</a></p>
+            <p><a class="blue-grey-text" href="https://thirsty-swanson-24a632.netlify.com/">View Project</a> <a
+                class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Technologies -<i
@@ -317,9 +319,9 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
-  <script async defer
+  <!-- <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB46Z556Ao89Fgqm9L52HfNvZBj_ddgN8E&callback=initMap">
-  </script>
+  </script> -->
   <script>
     $(document).ready(function () {
       // init SideNav
@@ -342,44 +344,45 @@
             $('nav').addClass('black border-bot');
           }
         }
-      ];
-
-      Materialize.scrollFire(options);
-
-
-      //googlemaps
-      const position = [33.004, -97.2258];
-      const centerPosition = [33.014, -97.15];
-
-      function showGoogleMaps() {
-        //map positions
-        const latLng = new google.maps.LatLng(position[0], position[1]);
-        const centerLatLng = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
-
-        //Map options
-        const mapOptions = {
-          zoom: 12,
-          streetview: false,
-          scaleControl: true,
-          mapType: google.maps.MapTypeId.ROADMAP,
-          center: centerLatLng
-        }
-        //create map
-        map = new google.maps.Map(document.getElementById('googlemap'), mapOptions);
-
-        //Show Marker
-        marker = new google.maps.Marker({
-          position: latLng,
-          map: map,
-          draggable: false,
-          animation: google.maps.Animation.DROP
-        });
-      }
-
-      //Maps event
-      google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+      ]
     });
+
+    Materialize.scrollFire(options);
   </script>
+
+  // //googlemaps
+  // const position = [33.004, -97.2258];
+  // const centerPosition = [33.014, -97.15];
+
+  // function showGoogleMaps() {
+  // //map positions
+  // const latLng = new google.maps.LatLng(position[0], position[1]);
+  // const centerLatLng = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
+
+  // //Map options
+  // const mapOptions = {
+  // zoom: 12,
+  // streetview: false,
+  // scaleControl: true,
+  // mapType: google.maps.MapTypeId.ROADMAP,
+  // center: centerLatLng
+  // }
+  // //create map
+  // map = new google.maps.Map(document.getElementById('googlemap'), mapOptions);
+
+  // //Show Marker
+  // marker = new google.maps.Marker({
+  // position: latLng,
+  // map: map,
+  // draggable: false,
+  // animation: google.maps.Animation.DROP
+  // });
+  // }
+
+  // //Maps event
+  // google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+  // });
+  // </script>
 </body>
 
 </html>

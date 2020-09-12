@@ -75,7 +75,7 @@
           <p class="flow-text"> I like to create digital experiences.</p>
           <br>
           <br>
-          <a class="waves-effect waves-light btn-large" href="#projects">My Work</a>
+          <!-- <a class="waves-effect waves-light btn-large" href="#projects">My Work</a> -->
         </div>
       </div>
     </div>
@@ -144,7 +144,7 @@
         <div class="col m5 l5 offset-l1 container-img">
           <!-- <div class="about-img">
           </div> -->
-          <img class="responsive-img" src="/img/A7-compressor.jpg">
+          <img class="responsive-img" src="/img/daniel.jpg">
         </div>
       </div>
     </div>
@@ -248,141 +248,143 @@
   </section>
 
   <!--Let's Connect-->
-  <section class="section section-contact center">
-    <h2 class="left-align three-spaces white-text top"><span class="headline">Let's</span> connect.</h2>
-    <div id="googlemap"></div>
-    <div class="container three-spaces">
-      <div class="row">
-        <div class="col s12 m6 offset-m6">
-          <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <div class="card-panel z-depth-5 blue-grey darken-4">
-              <h3 id="contact" class="white-text scrollspy">CONTACT</h3>
-              <p class="lead text color-text">Have a question or want to work together?</p>
-              <div class="input-field white-text">
-                <input type="text" id="name" placeholder="Name" name="name" />
-                <label for="name">Name</label>
+  <section id="heroimg" class="section section-contact center">
+    <div class="container">
+      <h1 class="left-align three-spaces white-text top"><span class="headline">Let's</span> connect.</h1>
+      <div class="three-spaces">
+        <div class="row">
+          <div class="col s12 m6 offset-m6">
+            <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <div class="card-panel z-depth-5 blue-grey darken-4">
+                <h3 id="contact" class="white-text scrollspy">CONTACT</h3>
+                <p class="lead text color-text">Have a question or want to work together?</p>
+                <div class="input-field white-text">
+                  <input type="text" id="name" placeholder="Name" name="name" />
+                  <label for="name">Name</label>
+                </div>
+                <div class="input-field white-text">
+                  <input type="email" id="email" placeholder="Email" name="email" />
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field white-text">
+                  <input type="text" id="phone" placeholder="Phone" name="phone" />
+                  <label for="phone">Phone</label>
+                </div>
+                <div class="input-field white-text">
+                  <textarea class="materialize-textarea" id="message" placeholder="Your message"
+                    name="message"></textarea>
+                  <label for="message">Message</label>
+                </div>
+                <div class="my-2">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+                <input type="submit" value="Submit" class="btn blue-grey pulse">
               </div>
-              <div class="input-field white-text">
-                <input type="email" id="email" placeholder="Email" name="email" />
-                <label for="email">Email</label>
-              </div>
-              <div class="input-field white-text">
-                <input type="text" id="phone" placeholder="Phone" name="phone" />
-                <label for="phone">Phone</label>
-              </div>
-              <div class="input-field white-text">
-                <textarea class="materialize-textarea" id="message" placeholder="Your message"
-                  name="message"></textarea>
-                <label for="message">Message</label>
-              </div>
-              <div class="my-2">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
-              <input type="submit" value="Submit" class="btn blue-grey pulse">
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="page-footer black">
-    <div class="container white-text center">
-      <div class="row center">
-        <div class="col s12">
-          <a href="#home"><i class="fas fa-angle-double-up fa-3x"></i></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-          <a href="https://www.linkedin.com/in/daniel-rodriguez-b16877166/" target="_blank" class="white-text">
-            <i class="fab fa-linkedin fa-4x"></i>
-          </a>
-          <a href="https://github.com/DevDaniel-R" target="_blank" class="white-text">
-            <i class="fab fa-github-square fa-4x"></i>
-          </a>
-          <a href="mailto:drodriguez993@outlook.com" target="_blank" class="white-text">
-            <i class="fas fa-envelope-square fa-4x"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container center-align">
-        <span class="headline">DANIEL RODRIGUEZ</span> © 2019
-      </div>
-      <!-- </div> -->
-  </footer>
-
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
-  <!-- <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB46Z556Ao89Fgqm9L52HfNvZBj_ddgN8E&callback=initMap">
-  </script> -->
-  <script>
-    $(document).ready(function () {
-      // init SideNav
-      $('.button-collapse').sideNav();
-      //init Scrollspy
-      $('.scrollspy').scrollSpy();
-      //init Scrollfire
-      const options = [{
-          selector: '.main-text',
-          offset: 0,
-          callback: function (el) {
-            Materialize.fadeInImage($(el));
-          }
-        },
-        {
-          selector: '.navbar-fixed',
-          offset: 1400,
-          callback: function (el) {
-            $('nav').removeClass('transparent');
-            $('nav').addClass('black border-bot');
-          }
-        }
-      ]
-    });
-
-    Materialize.scrollFire(options);
-  </script>
-
-  // //googlemaps
-  // const position = [33.004, -97.2258];
-  // const centerPosition = [33.014, -97.15];
-
-  // function showGoogleMaps() {
-  // //map positions
-  // const latLng = new google.maps.LatLng(position[0], position[1]);
-  // const centerLatLng = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
-
-  // //Map options
-  // const mapOptions = {
-  // zoom: 12,
-  // streetview: false,
-  // scaleControl: true,
-  // mapType: google.maps.MapTypeId.ROADMAP,
-  // center: centerLatLng
-  // }
-  // //create map
-  // map = new google.maps.Map(document.getElementById('googlemap'), mapOptions);
-
-  // //Show Marker
-  // marker = new google.maps.Marker({
-  // position: latLng,
-  // map: map,
-  // draggable: false,
-  // animation: google.maps.Animation.DROP
-  // });
-  // }
-
-  // //Maps event
-  // google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-  // });
-  // </script>
 </body>
 
+<!-- Footer -->
+<footer class="page-footer black">
+  <div class="container white-text center">
+    <div class="row center">
+      <div class="col s12">
+        <a href="#home"><i class="fas fa-angle-double-up fa-3x"></i></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <a href="https://www.linkedin.com/in/daniel-rodriguez-b16877166/" target="_blank" class="white-text">
+          <i class="fab fa-linkedin fa-4x"></i>
+        </a>
+        <a href="https://github.com/DevDaniel-R" target="_blank" class="white-text">
+          <i class="fab fa-github-square fa-4x"></i>
+        </a>
+        <a href="mailto:drodriguez993@outlook.com" target="_blank" class="white-text">
+          <i class="fas fa-envelope-square fa-4x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container center-align">
+      <span class="headline">DANIEL RODRIGUEZ</span> © 2019
+    </div>
+    <!-- </div> -->
+
+</footer>
+
 </html>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
+<!-- <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB46Z556Ao89Fgqm9L52HfNvZBj_ddgN8E&callback=initMap">
+  </script> -->
+<script>
+  $(document).ready(function () {
+    // init SideNav
+    $('.button-collapse').sideNav();
+    //init Scrollspy
+    $('.scrollspy').scrollSpy();
+  });
+  //init Scrollfire
+  var options = [{
+      selector: '.main-text',
+      offset: 10,
+      callback: function (el) {
+        Materialize.fadeInImage($(el));
+      }
+    },
+    {
+      selector: '.navbar-fixed',
+      offset: 1400,
+      callback: function (el) {
+        $('nav').removeClass('transparent');
+        $('nav').addClass('black border-bot');
+      }
+    }
+  ]
+
+
+  Materialize.scrollFire(options)
+</script>
+
+// //googlemaps
+// const position = [33.004, -97.2258];
+// const centerPosition = [33.014, -97.15];
+
+// function showGoogleMaps() {
+// //map positions
+// const latLng = new google.maps.LatLng(position[0], position[1]);
+// const centerLatLng = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
+
+// //Map options
+// const mapOptions = {
+// zoom: 12,
+// streetview: false,
+// scaleControl: true,
+// mapType: google.maps.MapTypeId.ROADMAP,
+// center: centerLatLng
+// }
+// //create map
+// map = new google.maps.Map(document.getElementById('googlemap'), mapOptions);
+
+// //Show Marker
+// marker = new google.maps.Marker({
+// position: latLng,
+// map: map,
+// draggable: false,
+// animation: google.maps.Animation.DROP
+// });
+// }
+
+// //Maps event
+// google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+// });
+// </script>

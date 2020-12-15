@@ -161,12 +161,11 @@
             <p><a class="blue-grey-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Technologies -<i
-                class="material-icons right">close</i></span>
+            <span class="card-title grey-text">Technologies -<i class="material-icons right">close</i></span>
             <p class="pink-text">HTML, CSS ANIMATION, JAVASCRIPT, PHP, AND SQL. </p>
             <br>
-            <span class="card-title grey-text text-darken-4">Info -</span>
-            <p class="black-text">Visually appealing newsletter with a functioning form. Receive a custom styled email
+            <span class="card-title grey-text">Info -</span>
+            <p class="text-white">Visually appealing newsletter with a functioning form. Receive a custom styled email
               after siging up. </p>
           </div>
         </div>
@@ -183,12 +182,11 @@
             <p><a class="blue-grey-text" href="#">View Project</a> <a class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Technologies -<i
-                class="material-icons right">close</i></span>
+            <span class="card-title grey-text">Technologies -<i class="material-icons right">close</i></span>
             <p class="pink-text">HTML, CSS, JAVASCRIPT, PHP, PDO AND SQL. </p>
             <br>
-            <span class="card-title grey-text text-darken-4">Info -</span>
-            <p class="black-text">Hoolie Search Engine! Challenging project that had me working more with php and sql.
+            <span class="card-title grey-text">Info -</span>
+            <p class="text-white">Hoolie Search Engine! Challenging project that had me working more with php and sql.
               Developed web crawlers to search and store data to my database. </p>
           </div>
         </div>
@@ -200,19 +198,18 @@
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator responsive-img" src="img/BrickHousePizza.png">
           </div>
-          <div class="card-content card-box-color card-action">
+          <div class="card-content card-action">
             <span class="card-title activator grey-text text-darken-4">BrickHousePizza<i
                 class="material-icons right">more_vert</i></span>
             <p><a class="blue-grey-text" href="https://cranky-banach-ac7e68.netlify.com/">View Project</a> <a
                 class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Technologies -<i
-                class="material-icons right">close</i></span>
+            <span class="card-title grey-text">Technologies -<i class="material-icons right">close</i></span>
             <p class="pink-text">React Hooks, Styled Components </p>
             <br>
-            <span class="card-title grey-text text-darken-4">Info -</span>
-            <p class="black-text">Resturant ordering site built with React Hooks and Styled Components.</p>
+            <span class="card-title grey-text">Info -</span>
+            <p class="text-white">Resturant ordering site built with React Hooks and Styled Components.</p>
           </div>
         </div>
       </div>
@@ -229,12 +226,11 @@
                 class="pink-text" href="#">View Code</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Technologies -<i
-                class="material-icons right">close</i></span>
+            <span class="card-title grey-text">Technologies -<i class="material-icons right">close</i></span>
             <p class="pink-text">REACT, HOOKS, ES6 JS, STYLED COMPONENTS, NPM, LOCAL STORAGE </p>
             <br>
-            <span class="card-title grey-text text-darken-4">Info -</span>
-            <p class="black-text">React Hooks application. Fun interacting with an Api to show and manipulate data.</p>
+            <span class="card-title grey-text">Info -</span>
+            <p class="text-white">React Hooks application. Fun interacting with an Api to show and manipulate data.</p>
           </div>
         </div>
       </div>
@@ -336,6 +332,7 @@
       selector: '.navbar-fixed',
       offset: 1400,
       callback: function (el) {
+        Materialize.fadeInImage($(el));
         $('nav').removeClass('transparent');
         $('nav').addClass('black border-bot');
       }

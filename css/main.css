@@ -166,6 +166,12 @@ body {
   overflow: hidden;
 }
 
+/* img.responsive-img,
+video.responsive-video {
+  max-width: 100%;
+  height: auto;
+} */
+
 .section-about {
   background-color: #0a192f;
   /* background: #1565c0; */
@@ -256,4 +262,18 @@ body {
 
 .fa-angle-double-up {
   color: #E31B6D;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .main-header {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.5)100%), url("../img/Artboardbanner.png"); */
+    background-image: url("../img/Artboardbanner.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-position-x: center; */
+    height: 110vh;
+    color: #fff;
+  }
 }

@@ -5264,30 +5264,59 @@ small {
   line-height: inherit
 }
 
-.btn:focus,
+/* .btn:focus,
 .btn-large:focus,
 .btn-floating:focus {
-  /* background-color: #1d7d74 */
-  background-color: rgb(136, 146, 176);
-}
+   background-color: #1d7d74 
+  background-color: rgb(136, 146, 176); 
+} */
 
-.btn,
+/* .btn,
 .btn-large {
   text-decoration: none;
   color: #fff;
   background-color: rgb(136, 146, 176);
-  /* background-color: #26a69a; */
+  background-color: #26a69a; 
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
   cursor: pointer
+} */
+
+.btn,
+.btn-large {
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid white;
+  line-height: 1;
+  background-color: transparent;
+  padding: 7px;
+  outline: none;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  transition: .3s ease-out;
+  cursor: pointer
 }
 
 .btn:hover,
 .btn-large:hover {
-  /* background-color: #2bbbad */
-  background-color: rgb(136, 146, 176);
+  text-decoration: none;
+  border: 3px solid #00aced;
+  /* background-color: transparent; */
+  line-height: 1;
+  padding: 7px;
+  outline: none;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  transition: .3s ease-out;
+  cursor: pointer
+    /* background-color: #2bbbad 
+  background-color: rgb(136, 146, 176); */
 }
 
 .btn-floating {

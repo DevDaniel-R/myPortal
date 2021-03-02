@@ -264,12 +264,18 @@ video.responsive-video {
   color: #E31B6D;
 }
 
+a:hover .fa-angle-double-up {
+  padding: 2px;
+  text-shadow: 0 0 15px whitesmoke !important;
+  transition: all 0.5s ease;
+}
+
+
 a:hover {
   color: #00aced !important;
   text-shadow: 0 0 15px #00aced !important;
   transition: all 0.5s ease;
 }
-
 
 @media only screen and (max-width: 700px) {
   .main-header {

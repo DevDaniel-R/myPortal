@@ -5267,14 +5267,16 @@ small {
 .btn:focus,
 .btn-large:focus,
 .btn-floating:focus {
-  background-color: #1d7d74
+  /* background-color: #1d7d74 */
+  background-color: rgb(136, 146, 176);
 }
 
 .btn,
 .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: rgb(136, 146, 176);
+  /* background-color: #26a69a; */
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: .2s ease-out;
@@ -5284,7 +5286,8 @@ small {
 
 .btn:hover,
 .btn-large:hover {
-  background-color: #2bbbad
+  /* background-color: #2bbbad */
+  background-color: rgb(136, 146, 176);
 }
 
 .btn-floating {
